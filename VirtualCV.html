@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="CV.css">
+        <title>Virtual Resume</title>
+    </head>
+    
+
+    
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a herf="#home">Home</a></li>
+                <li><a herf="#about">About</a></li>
+                <li><a href="https://github.com/Thrice-Hasna">GitHub</a></li>
+                <li class="topnav-Right"><a herf="#portfolio">Portfolio (UX/UI)</a></li>
+                <li class="topnav-Right"><a herf="https://www.linkedin.com/in/khaled-hasna-0a1a3417a/">LinkedIn</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9209;</a></li>
+            </ul>
+        </nav>
+       
+    <div class="container" id="jobHistory">
+        <div class="col-4">
+        <table>
+            <tr><td><a href="https://it-iq.com/tech/"><button type="button">IT-IQ Tech Recruiters</button></a></td></tr>
+            <tr><td><a href="https://www.sisystems.com/en-ca/"><button type="button">Si Systems</button></a></td></tr>
+            <tr><td><a href="https://www.olympiatrust.com/"><button type="button">Olympia Trust Company</button></a></td></tr>
+            <tr><td><a href="https://www.shareworks.com/"><button type="button">Solium Capital (Morgan Stanley)</button></a></td></tr>
+            <tr><td><a href="https://www.rbcroyalbank.com/"><button type="button">Royal Bank of Canada</button></a></td></tr>
+        </table>
+    </div>
+    <div class="col-8">
+        <p></p>
+    </div>
+ 
+    </div>
+        
+    <footer>
+        
+    </footer>
+
+
+   
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                   x.className = "topnav"; 
+                }
+            }
+        </script>
+
+    </body>
+
+
+
+</html>

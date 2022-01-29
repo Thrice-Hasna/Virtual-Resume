@@ -1,0 +1,131 @@
+/* DEFAULTS */
+nav,
+header,
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* CUSTOM STYLES */
+
+#jobHistory {
+    background: rgba(224, 230, 238, 0.507);
+    margin: auto;
+    padding: 5px;
+}
+
+button span {
+    cursor: crosshair;
+    display: inline-block;
+    padding: 20px;
+    margin: auto;
+    transition: 0.5s;
+    border: 4px double #0080ff;   
+}
+
+
+button:hover {
+    background-color: #69aef3;
+    border: 1px solid transparent;
+    min-height: 20px;
+
+}
+
+
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* NAV BAR */
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background: lightsteelblue;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+    padding: 2px;
+}
+
+ul.topnav li.topnav-Right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: rgb(52, 54, 56);
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: white;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) { 
+        display: none;
+    }
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
